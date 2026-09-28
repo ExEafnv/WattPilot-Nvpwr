@@ -260,7 +260,7 @@ EfiDSEFix.exe -e
 
 如果你希望继续使用或改进，可以：
 
-- 基于本仓库提供的 `AutoSetGpuPower-Silent.ps1` 自行修改。
+- 基于本仓库提供的 `AUTO_POWER.ps1` 自行修改。
 - 借助 AI 工具（如 ChatGPT、Claude 等）根据你的显卡型号、驱动版本、需求进行适配或优化。
 - 参考上游项目自行更新依赖文件。
 
