@@ -72,9 +72,7 @@
           工具集发布页：https://www.bilibili.com/video/BV1WJe16dE2F/
           说明：本脚本采用的 EfiGuard + EfiDSEFix + Nvpwr 启动链，
                 其命令顺序与参数方案来源于该作者发布的 GUI 工具集。
-                发布版 GUI 曾误将恢复参数写为 -r，正确参数为 -e；
-                本脚本使用 -e，并增加兜底恢复以确保 DSE 始终回到开启状态。
-
+                
         本脚本为上述方案的自动化静默实现，面向开机或登录后计划任务场景，
         不包含 GUI，所有过程信息写入同目录 auto.log。
 
