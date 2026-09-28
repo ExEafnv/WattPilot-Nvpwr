@@ -45,7 +45,7 @@ WattPilot-Nvpwr 是一个静默的功耗墙自动设置工具。将编译好的 
 
 **本仓库只提供以下内容：**
 
-- `AutoSetGpuPower-Silent.ps1`：PowerShell 源代码。
+- `AUTO_POWER.ps1`：PowerShell 源代码。
 - Releases 页面中编译好的 `AUTO_POWER*.exe`。
 
 **本仓库不包含、也不会提供以下依赖文件：**
