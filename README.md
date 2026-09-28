@@ -265,6 +265,34 @@ EfiDSEFix.exe -e
 
 ---
 
+## 源码与自行编译
+
+本仓库提供的 `AUTO_POWER.ps1` 为 PowerShell 源码。Releases 中的
+`AUTO_POWER*.exe` 由该源码经 `ps2exe` 编译生成。
+
+如果你修改了源码，想自行重新编译，可以用以下命令：
+
+```powershell
+ps2exe -InputFile "AUTO_POWER.ps1" -OutputFile "AUTO_POWER_170.exe" -NoConsole
+```
+
+---
+
+参数说明：
+
+- `-InputFile`：源码文件路径。
+- `-OutputFile`：编译后的 exe 文件名。文件名中的数字决定目标功耗，
+  例如 `AUTO_POWER_170.exe` 就是 170 W。
+- `-NoConsole`：不显示控制台窗口，符合静默运行的设计。
+
+`ps2exe` 是一个开源工具，可在 PowerShell Gallery 安装：
+
+```powershell
+Install-Module -Name ps2exe -Scope CurrentUser
+```
+
+如果你不需要修改源码，直接下载 Releases 中的 exe 即可，无需自行编译。
+
 ## 常见问题
 
 ### Q1：为什么下载包里没有 `EfiDSEFix.exe`、`Nvpwr.sys`、`NvpwrCtl.exe`？
